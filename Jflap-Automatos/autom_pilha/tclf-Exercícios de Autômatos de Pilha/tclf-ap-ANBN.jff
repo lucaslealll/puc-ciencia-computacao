@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>pda</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>96.0</x>
+			<y>330.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>314.0</x>
+			<y>110.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>545.0</x>
+			<y>332.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>B</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>?</read>
+			<pop>?</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>a</read>
+			<pop/>
+			<push>B</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>B</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>?</read>
+			<pop>?</pop>
+			<push/>
+		</transition>
+		<note>
+			<text>anbn / n &gt;= 0</text>
+			<x>10.0</x>
+			<y>36.0</y>
+		</note>
+		<note>
+			<text>a (lê uma letra), A (tira), A(coloca)</text>
+			<x>10.0</x>
+			<y>13.0</y>
+		</note>
+		<note>
+			<text>LÊ a, DESEMPILHA ε, EMPILHA b</text>
+			<x>9.0</x>
+			<y>261.0</y>
+		</note>
+		<note>
+			<text>LÊ b, DESEMPILHA B, EMPILHA ε</text>
+			<x>223.0</x>
+			<y>40.0</y>
+		</note>
+		<note>
+			<text>LÊ b, DESEMPILHA B, EMPILHA ε</text>
+			<x>71.0</x>
+			<y>182.0</y>
+		</note>
+		<note>
+			<text>LÊ fim_da_fita, DESEMPILHA pilha_vazia, EMPILHA ε</text>
+			<x>327.0</x>
+			<y>177.0</y>
+		</note>
+		<note>
+			<text>LÊ fim_da_fita, DESEMPILHA pilha_vazia, EMPILHA ε</text>
+			<x>174.0</x>
+			<y>312.0</y>
+		</note>
+		<note>
+			<text/>
+			<x>519.0</x>
+			<y>417.0</y>
+		</note>
+		<note>
+			<text>FINAL</text>
+			<x>553.0</x>
+			<y>307.0</y>
+		</note>
+	</automaton>
+</structure>

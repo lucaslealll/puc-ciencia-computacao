@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Lucas",
+            "database": "db_aereo",
+            "username": "Lucas",
+            "password": "Lucas#123",
+            "connectionTimeout": 60
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>pda</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>39.0</x>
+			<y>146.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>187.0</x>
+			<y>147.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>386.0</x>
+			<y>146.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>229.0</x>
+			<y>182.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>a</read>
+			<pop/>
+			<push>X</push>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>?</read>
+			<pop>?</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+			<pop/>
+			<push/>
+		</transition>
+		<note>
+			<text>L= an bn+1 / n &gt; 0</text>
+			<x>12.0</x>
+			<y>25.0</y>
+		</note>
+		<note>
+			<text>LÊ 'a'
+TIR 'nda'
+EMPILHA 'X'</text>
+			<x>24.0</x>
+			<y>211.0</y>
+		</note>
+		<note>
+			<text>LÊ 'b'
+TIRA 'X'
+EMPILHA 'nda'</text>
+			<x>112.0</x>
+			<y>182.0</y>
+		</note>
+		<note>
+			<text/>
+			<x>331.0</x>
+			<y>306.0</y>
+		</note>
+		<note>
+			<text>LÊ 'b'
+TIRA 'X' (TEM QUE TER UM 'X' EMPILHADO)
+EMPILHA 'X'</text>
+			<x>127.0</x>
+			<y>45.0</y>
+		</note>
+		<note>
+			<text/>
+			<x>393.0</x>
+			<y>310.0</y>
+		</note>
+		<note>
+			<text>LÊ 'b' (LÊ UM 'b' A MAIS = bn+1)
+TIRA 'nda'
+EMPILHA 'nda'</text>
+			<x>275.0</x>
+			<y>104.0</y>
+		</note>
+		<note>
+			<text>LÊ 'se é a fita é vazia'
+TIRA 'nda da pilha vazia'
+EMPILHA 'nda'</text>
+			<x>348.0</x>
+			<y>226.0</y>
+		</note>
+	</automaton>
+</structure>

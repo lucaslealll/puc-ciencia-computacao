@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turing</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>77.0</x>
+			<y>414.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>198.0</x>
+			<y>414.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>330.0</x>
+			<y>414.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>477.0</x>
+			<y>415.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>159.0</x>
+			<y>251.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>315.0</x>
+			<y>251.0</y>
+		</state>
+		<state id="7" name="q7">
+			<x>444.0</x>
+			<y>251.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read>b</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>0</to>
+			<controlx>322</controlx>
+			<controly>536</controly>
+			<read>A</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>5</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>b</read>
+			<write>b</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>a</read>
+			<write>a</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>X</read>
+			<write>X</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>B</read>
+			<write>B</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>a</read>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>X</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>X</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>b</read>
+			<write>b</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>6</to>
+			<read>X</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>6</to>
+			<controlx>173</controlx>
+			<controly>297</controly>
+			<read>b</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>7</to>
+			<read/>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>4</to>
+			<read>c</read>
+			<write>X</write>
+			<move>L</move>
+		</transition>
+		<note>
+			<text>Pergunta 3; 5 pts
+
+Construa uma Máquina de Turing que reconheça a seguinte Linguagem:
+L=anbn+1cn/ n&gt;=0
+
+n = 0 --&gt; b
+n = 1 --&gt; abbc
+n = 2 --&gt; aabbbcc</text>
+			<x>17.0</x>
+			<y>2.0</y>
+		</note>
+	</automaton>
+</structure>

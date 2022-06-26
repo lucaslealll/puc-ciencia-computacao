@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turingbb</type>
+	<automaton>
+		<!--The list of states.-->
+		<block id="0" name="q0">
+			<tag>Machine0</tag>
+			<x>62.0</x>
+			<y>245.0</y>
+			<initial/>
+		</block>
+		<block id="1" name="q1">
+			<tag>Machine1</tag>
+			<x>215.0</x>
+			<y>245.0</y>
+		</block>
+		<block id="2" name="q2">
+			<tag>Machine2</tag>
+			<x>374.0</x>
+			<y>245.0</y>
+		</block>
+		<block id="3" name="q3">
+			<tag>Machine3</tag>
+			<x>537.0</x>
+			<y>245.0</y>
+		</block>
+		<block id="4" name="q4">
+			<tag>Machine4</tag>
+			<x>337.0</x>
+			<y>426.0</y>
+		</block>
+		<block id="5" name="q5">
+			<tag>Machine5</tag>
+			<x>555.0</x>
+			<y>426.0</y>
+		</block>
+		<!--The list of transitions.-->
+		<transition>
+			<from>3</from>
+			<to>1</to>
+			<controlx>376</controlx>
+			<controly>320</controly>
+			<read>A</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>a</read>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>a</read>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read/>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>b</read>
+			<write>B</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>5</to>
+			<controlx>348</controlx>
+			<controly>363</controly>
+			<read/>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>4</to>
+			<controlx>233</controlx>
+			<controly>369</controly>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>a</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<!--The list of automata-->
+		<Machine0/>
+		<Machine2/>
+		<Machine1/>
+		<Machine4/>
+		<Machine3/>
+		<Machine5/>
+		<note>
+			<text>3) L= an+1 bn / n &gt;= 0
+
+an bn cn
+lê, escreve, R (direita)
+lê, escreve, L (esquerda)
+
+a / n=0
+aab / n=1
+aaabb / n=2</text>
+			<x>17.0</x>
+			<y>38.0</y>
+		</note>
+		<note>
+			<text>an+1
+lê 1 'a' a mais</text>
+			<x>97.0</x>
+			<y>262.0</y>
+		</note>
+		<note>
+			<text>movimento vazio caso n=0</text>
+			<x>384.0</x>
+			<y>323.0</y>
+		</note>
+	</automaton>
+</structure>

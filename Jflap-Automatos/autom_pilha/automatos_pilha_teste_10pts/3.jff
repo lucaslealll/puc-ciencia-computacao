@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>pda</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>75.0</x>
+			<y>132.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>228.0</x>
+			<y>130.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>415.0</x>
+			<y>129.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>596.0</x>
+			<y>131.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read/>
+			<pop>Z</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>a</read>
+			<pop/>
+			<push>X</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+			<pop/>
+			<push/>
+		</transition>
+		<note>
+			<text>an b2n / n &gt; 0
+
+abb / n=1
+aabbbb / n=2</text>
+			<x>110.0</x>
+			<y>186.0</y>
+		</note>
+	</automaton>
+</structure>

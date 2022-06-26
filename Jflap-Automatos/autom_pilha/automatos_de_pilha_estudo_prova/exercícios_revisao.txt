@@ -1,0 +1,89 @@
+1)L= anbn+1/ n > 0
+• 3 Menores palavras
+‣ ‣ abb
+‣ ‣ aabbb
+‣ ‣ aaabbbb
+
+2)L= anbn+1/ n >= 0
+• 3 Menores palavras
+‣ ‣ b
+‣ ‣ abb
+‣ ‣ aabbb
+
+3)L= anbn-1/ n > 0
+• 3 Menores palavras
+‣ ‣ a
+‣ ‣ aab
+‣ ‣ aaabb
+
+4)L= anb3n/ n > 0
+• 3 Menores palavras
+‣ ‣ abbb
+‣ ‣ aabbbbbb
+‣ ‣ aaabbbbbbbbb
+
+5)L= a2nbn/ n > 0
+• 3 Menores palavras
+‣ ‣ aab
+‣ ‣ aaaabb
+‣ ‣ aaaaaabbb
+
+6)L= a2nb3n/ n > 0
+• 3 Menores palavras
+‣ ‣ aabbb
+‣ ‣ aaaabbbbbb
+‣ ‣ aaaaaabbbbbbbbb
+
+7)L= anbmcn+m/ n > 0, m > 0
+• 3 Menores palavras
+‣ ‣ abcc
+‣ ‣ abbccc
+‣ ‣ aabccc
+
+8)L= anbmcn+m/ n >= 0,m >= 0
+• 3 Menores palavras
+‣ ‣ ε
+‣ ‣ bc
+‣ ‣ ac
+
+9)L= anbmcn-m/ n > 0,m > 0 e n >= m
+• 3 Menores palavras
+‣ ‣ ab
+‣ ‣ aabc
+‣ ‣ aabb
+
+10) L = anb2n / n >= 0
+• 3 Menores palavras
+‣ ‣ ε
+‣ ‣ abb
+‣ ‣ aabbbb
+
+11) L = anb2n+1 / n >= 0
+• 3 Menores palavras
+‣ ‣ b
+‣ ‣ abbb
+‣ ‣ aabbbbb
+
+12) L = an+1b2n / n >= 0
+• 3 Menores palavras
+‣ ‣ a
+‣ ‣ aabb
+‣ ‣ aaabbbb
+
+13) L = an bm c2(m+n) / n,m >= 0
+• 3 Menores palavras
+‣ ‣ ε
+‣ ‣ abb
+‣ ‣ bcc
+
+14) L = an bm / n > m e n,m >= 0
+• 3 Menores palavras
+‣ ‣ a
+‣ ‣ aa
+‣ ‣ aaa
+
+15) L = an bm / n < m e n,m >= 0
+• 3 Menores palavras
+‣ ‣ b
+‣ ‣ bb
+‣ ‣ bbb

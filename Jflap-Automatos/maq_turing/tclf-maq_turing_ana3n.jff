@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turing</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>294.0</x>
+			<y>55.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>96.0</x>
+			<y>183.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>292.0</x>
+			<y>183.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>97.0</x>
+			<y>290.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>287.0</x>
+			<y>290.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>507.0</x>
+			<y>290.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>506.0</x>
+			<y>55.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read/>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>a</read>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read/>
+			<write>a</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read/>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>0</to>
+			<controlx>396</controlx>
+			<controly>172</controly>
+			<read>A</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>6</to>
+			<read/>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read/>
+			<write/>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>a</read>
+			<write>a</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read/>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<note>
+			<text>an a3n
+
+a_AAA</text>
+			<x>31.0</x>
+			<y>29.0</y>
+		</note>
+	</automaton>
+</structure>

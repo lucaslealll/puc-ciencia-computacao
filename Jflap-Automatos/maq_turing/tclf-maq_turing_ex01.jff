@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turing</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>197.0</x>
+			<y>224.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>321.0</x>
+			<y>224.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>448.0</x>
+			<y>224.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>253.0</x>
+			<y>114.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>382.0</x>
+			<y>114.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>532.0</x>
+			<y>114.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>a</read>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>3</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+			<write>B</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>b</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>b</read>
+			<write>b</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>a</read>
+			<write>a</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>B</read>
+			<write>B</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read/>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<controlx>316</controlx>
+			<controly>323</controly>
+			<read>A</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<note>
+			<text>1) L= an bn+1 / n &gt; 0
+
+an bn cn
+lê, escreve, R (direita)
+lê, escreve, L (esquerda)
+
+aabbb</text>
+			<x>20.0</x>
+			<y>34.0</y>
+		</note>
+	</automaton>
+</structure>

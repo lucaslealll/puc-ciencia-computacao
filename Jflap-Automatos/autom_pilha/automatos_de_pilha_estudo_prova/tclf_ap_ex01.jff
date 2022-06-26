@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>pda</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>65.0</x>
+			<y>158.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>180.0</x>
+			<y>158.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>315.0</x>
+			<y>157.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>180.0</x>
+			<y>241.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+			<pop/>
+			<push/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>a</read>
+			<pop/>
+			<push>X</push>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read/>
+			<pop>Z</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<note>
+			<text>1)L= anbn+1/ n&gt; 0
+• 3 Menores palavras
+‣ ‣ abb
+‣ ‣ aabbb
+‣ ‣ aaabbbb</text>
+			<x>15.0</x>
+			<y>1.0</y>
+		</note>
+	</automaton>
+</structure>

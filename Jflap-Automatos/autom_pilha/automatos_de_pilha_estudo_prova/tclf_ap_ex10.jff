@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>pda</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>55.0</x>
+			<y>161.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>193.0</x>
+			<y>161.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>324.0</x>
+			<y>161.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>597.0</x>
+			<y>161.0</y>
+			<final/>
+		</state>
+		<state id="4" name="q4">
+			<x>65.0</x>
+			<y>345.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>194.0</x>
+			<y>345.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>388.0</x>
+			<y>343.0</y>
+		</state>
+		<state id="7" name="q7">
+			<x>555.0</x>
+			<y>344.0</y>
+		</state>
+		<state id="8" name="q8">
+			<x>555.0</x>
+			<y>463.0</y>
+		</state>
+		<state id="9" name="q9">
+			<x>466.0</x>
+			<y>161.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>3</to>
+			<controlx>326</controlx>
+			<controly>273</controly>
+			<read/>
+			<pop>Z</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>7</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read>b</read>
+			<pop/>
+			<push/>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>8</to>
+			<read/>
+			<pop>Z</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>2</to>
+			<read>b</read>
+			<pop/>
+			<push/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+			<pop/>
+			<push>X</push>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>9</to>
+			<read>b</read>
+			<pop>X</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<controlx>192</controlx>
+			<controly>277</controly>
+			<read>a</read>
+			<pop/>
+			<push>X</push>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>a</read>
+			<pop/>
+			<push>X</push>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+			<pop/>
+			<push/>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>3</to>
+			<read/>
+			<pop>Z</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>a</read>
+			<pop/>
+			<push>X</push>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>6</to>
+			<read>b</read>
+			<pop/>
+			<push/>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>8</to>
+			<read/>
+			<pop>Z</pop>
+			<push/>
+		</transition>
+		<note>
+			<text>10) L = anb2n / n &gt;= 0
+• 3 Menores palavras
+‣ ‣ ε
+‣ ‣ abb
+‣ ‣ aabbbb</text>
+			<x>12.0</x>
+			<y>34.0</y>
+		</note>
+	</automaton>
+</structure>

@@ -1,0 +1,11 @@
+// gcc --h
+// gcc -O3 -S -masm=? -mtune=native -fverbose-asm main.c
+
+// gcc -O3 -S -masm=att -mtune=native -fverbose-asm main.c
+// gcc -O3 -S -masm=intel -mtune=native -fverbose-asm main.c
+
+// -O3:             Nivel maximo de otimizacao
+// -S:              Gera codigo assembly
+// -masm=?:         Sintaxe padrao de geracao do codigo
+// -mtune=native:   Processador nativo
+// -fverbose-asm:   Inserção de comentários

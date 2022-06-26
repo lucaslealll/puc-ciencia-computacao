@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JFlap 7.1
+Comment=JFlap 7.1
+Icon=/home/lucas/Development/jflap/jflap.png
+Exec=java -jar JFLAP7.1-1.jar
+Icon=java
+Path=/home/lucas/Development/jflap
+Terminal=false
+StartupNotify=false
+Categories=Development;
+
+

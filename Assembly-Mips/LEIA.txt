@@ -1,0 +1,11 @@
+COMANDO DE EXECUÇÃO (TERMINAL LINUX)
+
+$ java -jar Mars4_5.jar
+
+COMANDO DE EXECUÇÃO DE UM PROGRAMA NO TERMINAL(TERMINAL LINUX)
+
+$ java -jar Mars4_5.jar nome_do_programa.asm nc
+
+CRIANDO LANÇADOR
+
+Copie o arquivo "Mars4_5.desktop" para a pasta /usr/share/applications/

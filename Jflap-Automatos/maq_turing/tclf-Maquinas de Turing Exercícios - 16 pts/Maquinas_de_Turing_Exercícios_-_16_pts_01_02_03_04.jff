@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turing</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>96.0</x>
+			<y>153.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>294.0</x>
+			<y>172.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>456.0</x>
+			<y>172.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>602.0</x>
+			<y>146.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>201.0</x>
+			<y>254.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>419.0</x>
+			<y>257.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>3</from>
+			<to>0</to>
+			<controlx>331</controlx>
+			<controly>-35</controly>
+			<read>A</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>B</read>
+			<write>B</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>b</read>
+			<write>b</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>a</read>
+			<write>a</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>X</read>
+			<write>X</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+			<write>A</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>X</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>a</read>
+			<write>a</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>X</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>b</read>
+			<write>b</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>4</to>
+			<read>B</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>c</read>
+			<write>X</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>b</read>
+			<write>B</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read/>
+			<write/>
+			<move>R</move>
+		</transition>
+		<note>
+			<text>1) 
+aabbcc	-&gt;	AABBXX
+abbcc	-&gt;	ABbXc
+aabc	-&gt;	AABX</text>
+			<x>14.0</x>
+			<y>348.0</y>
+		</note>
+		<note>
+			<text>2) 
+Para a entrada "abbcc" após a execução a fita conterá:
+-&gt; ABbXc
+e o estado que para é:
+-&gt; Q4</text>
+			<x>8.0</x>
+			<y>429.0</y>
+		</note>
+		<note>
+			<text>3) 
+Para a entrada "aabbcc" após a execução a fita conterá:
+-&gt; AABBXX
+e o estado que para é:
+-&gt; Q5</text>
+			<x>396.0</x>
+			<y>341.0</y>
+		</note>
+		<note>
+			<text>4) 
+Assinale quais palavras são reconhecidas por essa Máquina de Turing
+[ ] aabcc
+[ ] Branco
+[ ] abbcc
+[ ] aabbccc
+[x] aabbcc
+[x] aaabbbccc
+[x] abc</text>
+			<x>394.0</x>
+			<y>435.0</y>
+		</note>
+		<note>
+			<text>L = AnBnCn / n &gt; 0</text>
+			<x>19.0</x>
+			<y>58.0</y>
+		</note>
+	</automaton>
+</structure>
