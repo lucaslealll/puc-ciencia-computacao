@@ -17,9 +17,9 @@ Hello! Here you can find some of the projects I worked on in college.
 ## **Java** ☕
 
 -   Digital Forensics Study
-    -   [Hash Generator](https://github.com/lucasoal/JavaGeradorHash)
-    -   [Interface for ADB](https://github.com/lucasoal/JavaAdbInterface)
--   [Android API About Cities](https://github.com/lucasoal/JavaAndroidGeodbAPI)
+    -   [Hash Generator](https://github.com/lucasoal/java-GeradorHash)
+    -   [Interface for ADB](https://github.com/lucasoal/java-ADBInterface)
+-   [Android API About Cities](https://github.com/lucasoal/java-AndroidGeodbAPI)
 -   [Study OOP](./Java/Java-EstudoPoo/)
 
 ## **Blender** 🐵
