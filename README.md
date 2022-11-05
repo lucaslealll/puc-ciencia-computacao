@@ -22,6 +22,9 @@ Hello! Here you can find some of the projects I worked on in college.
     -   [Interface for ADB](https://github.com/lucasoal/java-ADBInterface)
 -   [Android API About Cities](https://github.com/lucasoal/java-AndroidGeodbAPI)
 -   [Study OOP](./Java/Java-EstudoPoo/)
+    -   [Study OOP - Pen](./Java/poo-study-pen/)
+    -   [Study OOP - Bank Current Account](./Java/bank-current-account//)
+    -   [Study OOP - Sort Dessert](./Java/sorts-dessert/)
 
 ## **Blender** 🐵
 

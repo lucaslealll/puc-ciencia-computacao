@@ -1,0 +1,16 @@
+Problema 01:
+Elabore na linguagem Java os códigos para os seguintes requisitos:
+(a) Escreva a classe ContaCorrente que tenha os atributos cpf do titular e saldo. Esta
+classe deverá ter métodos getters e setters para cada atributo.
+
+(b) Defina métodos para: depositar uma quantia na conta, sacar uma quantia da
+conta e imprimir os dados referentes a uma conta (cpf e saldo). Para cada saque
+será debitada também uma taxa de operação equivalente à 0.5% do valor
+sacado.
+
+(c) Escreva uma classe ContaCorrenteEspecial que herda da classe ContaCorrente
+para representar uma conta corrente de um cliente especial. Clientes especiais
+pagam taxas de operação de apenas 0.1% do valor sacado.
+
+(d) Faça simulações de depósitos e saques com as duas classes e verifique seus
+resultados através do método de impressão.
