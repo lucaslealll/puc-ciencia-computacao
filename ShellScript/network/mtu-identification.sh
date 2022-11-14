@@ -55,10 +55,12 @@ binary_search() {
     # ls $1 > /dev/null #oculta warnings
 
     #limpa buffers e cache
-    sync; echo 1 > /proc/sys/vm/drop_caches
-    sync; echo 2 > /proc/sys/vm/drop_caches
-    sync; echo 3 > /proc/sys/vm/drop_caches 
-
+    sync
+    echo 1 >/proc/sys/vm/drop_caches
+    sync
+    echo 2 >/proc/sys/vm/drop_caches
+    sync
+    echo 3 >/proc/sys/vm/drop_caches
 
     if [ $1 -lt 0 ] || [ $2 -gt 127992 ]; then
         echo -e "\n${RED}[ ERR ] \t Falha de requisicao!\n Tente novamente ou altere o range de verificacao${RCOR}"
@@ -75,41 +77,41 @@ binary_search() {
         if [ "$packets1" == "0%" ] && [ "$packets2" != "0%" ]; then
             minlim=$1
             maxlim=$2
-            result=$(( ($1+$2)/2 ))
+            result=$((($1 + $2) / 2))
 
-            rest=$(( ($1+$2)%2 ))
+            rest=$((($1 + $2) % 2))
             if [ $rest -gt 0 ]; then
-                result=$(($result+1))          
+                result=$(($result + 1))
             fi
-            mtu=$(($2-$1))
+            mtu=$(($2 - $1))
             if [ $mtu == 1 ]; then
-                result=$(($1+28))
+                result=$(($1 + 28))
                 echo -e "\n${BLUE}[ FINISHED ]"
                 echo -e "${GREEN}O valor do MTU eh:${BLUE} $1"
                 echo -e "${GREEN}Considerando pacotes UDP e TCP (+28):${BLUE} $result"
                 exit
             fi
-        
+
             binary_search $minlim $result
-        
+
         elif [ "$packets1" != "0%" ] && [ "$packets2" == "0%" ]; then
             aux=$maxlim
-            result=$(( ($aux+$minlim)/2 ))
+            result=$((($aux + $minlim) / 2))
             minlim=$aux
-          
+
             binary_search $minlim $result
-            
+
         elif [ "$packets1" == "0%" ] && [ "$packets2" == "0%" ]; then
-            mtu=$(($2-$1))
+            mtu=$(($2 - $1))
             if [ $mtu == 0 ]; then
-                result=$(($1+28))
+                result=$(($1 + 28))
                 echo -e "\n${BLUE}[ FINISHED ]"
                 echo -e "${GREEN}O valor do MTU eh: $1"
                 echo -e "${GREEN}Considerando pacotes UDP e TCP:${BLUE} $result"
                 exit
             fi
             binary_search $2 $maxlim
-        
+
         elif [ "$packets1" != "0%" ] && [ "$packets2" != "0%" ]; then
             echo -e "${RED}O MTU nao esta presente neste range apresentado"
             exit
