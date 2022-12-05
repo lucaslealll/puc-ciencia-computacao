@@ -78,8 +78,7 @@ int main(int argc, char const *argv[])
     {
         memset(buffer, 0, sizeof buffer);
         client_message = read(client, buffer, 1024);
-        status = ("\n[client] %s", buffer);
-        printf(status)
+        printf("\n[client] %s", buffer);
         send(client, check, strlen(check), 0);
 
     } while (strcmp(buffer, CLOSE_SERVER) != 0);
