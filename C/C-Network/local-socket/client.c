@@ -60,10 +60,9 @@ int main(int argc, char const *argv[])
     switch (option)
     {
     case '1':
-        printf("<close_client()> para fechar o cliente\n<close_server()> para encerrar o servidor\n");
         int sock = 0, server_message, client_fd;
         struct sockaddr_in server_addr;
-        char buffer[1024] = {0}, mensagem[1024];
+        char *buffer[1024], *mensagem[1024];
 
         if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
         {
@@ -92,8 +91,9 @@ int main(int argc, char const *argv[])
         {
             fflush(stdin);
             printf("\n[client] ");
-            scanf("%s", &mensagem);
-            getchar();
+            fgets(mensagem, 1024, stdin);
+            // scanf("%s", &mensagem);
+            // getchar();
             send(sock, mensagem, strlen(mensagem), 0);
             print_green("[client] ✓ enviado");
 

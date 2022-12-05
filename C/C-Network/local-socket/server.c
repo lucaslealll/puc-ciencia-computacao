@@ -1,7 +1,5 @@
 // Server side C/C++ program to demonstrate Socket
 // programming
-// VERIFICA O SISTEMA OPERACIONAL PARA SUBSTITUIR FUNÇÕES DE LIMPEZA DE TELA, BUFFER E SLEEP
-
 #include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,6 +9,7 @@
 #define PORT 8080
 #define CLOSE_SERVER "close_server()"
 
+// VERIFICA O SISTEMA OPERACIONAL PARA SUBSTITUIR FUNÇÕES DE LIMPEZA DE TELA, BUFFER E SLEEP
 #if defined(__MINGW32__) || defined(_MSC_VER)
 #define clean_input() fflush(stdin)
 #define clear_screen() system("cls")
@@ -22,12 +21,16 @@
 #define sleep() system("sleep 1")
 #endif
 
+char print_green(int argc, const *argv[])
+{
+    printf("\033[1;32m%s\033[0m", argv);
+}
+
 int main(int argc, char const *argv[])
 {
-
     system("clear");
-    printf("\nTrabalho 06 - API socket BSD");
-    printf("\nSERVIDOR\n");
+    print_green("\nTrabalho 06 - API socket BSD");
+    print_green("\nSERVIDOR\n");
 
     int server_fd, client, client_message;
     struct sockaddr_in address;
@@ -39,7 +42,7 @@ int main(int argc, char const *argv[])
     // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
-        perror("[server] socket failed");
+        print_green("[server] socket failed");
         exit(EXIT_FAILURE);
     }
 
@@ -48,7 +51,7 @@ int main(int argc, char const *argv[])
                    SO_REUSEADDR | SO_REUSEPORT, &opt,
                    sizeof(opt)))
     {
-        perror("[server] setsockopt");
+        print_green("[server] setsockopt");
         exit(EXIT_FAILURE);
     }
     address.sin_family = AF_INET;
@@ -59,18 +62,18 @@ int main(int argc, char const *argv[])
     if (bind(server_fd, (struct sockaddr *)&address,
              sizeof(address)) < 0)
     {
-        perror("[server] bind failed");
+        print_green("[server] bind failed");
         exit(EXIT_FAILURE);
     }
     if (listen(server_fd, 3) < 0)
     {
-        perror("[server] listen");
+        print_green("[server] listen");
         exit(EXIT_FAILURE);
     }
     if ((client = accept(server_fd, (struct sockaddr *)&address,
                          (socklen_t *)&addrlen)) < 0)
     {
-        perror("[server] accept");
+        print_green("[server] accept");
         exit(EXIT_FAILURE);
     }
 
@@ -80,7 +83,8 @@ int main(int argc, char const *argv[])
     {
         memset(buffer, 0, sizeof buffer);
         client_message = read(client, buffer, 1024);
-        printf("\n[client] %s", buffer);
+        status = ("\n[client] %s", buffer);
+        print_green(status)
         send(client, check, strlen(check), 0);
 
     } while (strcmp(buffer, CLOSE_SERVER) != 0);
