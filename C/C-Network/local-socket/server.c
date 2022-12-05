@@ -21,16 +21,11 @@
 #define sleep() system("sleep 1")
 #endif
 
-char print_green(int argc, const *argv[])
-{
-    printf("\033[1;32m%s\033[0m", argv);
-}
-
 int main(int argc, char const *argv[])
 {
     system("clear");
-    print_green("\nTrabalho 06 - API socket BSD");
-    print_green("\nSERVIDOR\n");
+    printf("\nTrabalho 06 - API socket BSD");
+    printf("\nSERVIDOR\n");
 
     int server_fd, client, client_message;
     struct sockaddr_in address;
@@ -42,7 +37,7 @@ int main(int argc, char const *argv[])
     // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
-        print_green("[server] socket failed");
+        printf("[server] socket failed");
         exit(EXIT_FAILURE);
     }
 
@@ -51,7 +46,7 @@ int main(int argc, char const *argv[])
                    SO_REUSEADDR | SO_REUSEPORT, &opt,
                    sizeof(opt)))
     {
-        print_green("[server] setsockopt");
+        printf("[server] setsockopt");
         exit(EXIT_FAILURE);
     }
     address.sin_family = AF_INET;
@@ -62,18 +57,18 @@ int main(int argc, char const *argv[])
     if (bind(server_fd, (struct sockaddr *)&address,
              sizeof(address)) < 0)
     {
-        print_green("[server] bind failed");
+        printf("[server] bind failed");
         exit(EXIT_FAILURE);
     }
     if (listen(server_fd, 3) < 0)
     {
-        print_green("[server] listen");
+        printf("[server] listen");
         exit(EXIT_FAILURE);
     }
     if ((client = accept(server_fd, (struct sockaddr *)&address,
                          (socklen_t *)&addrlen)) < 0)
     {
-        print_green("[server] accept");
+        printf("[server] accept");
         exit(EXIT_FAILURE);
     }
 
@@ -84,7 +79,7 @@ int main(int argc, char const *argv[])
         memset(buffer, 0, sizeof buffer);
         client_message = read(client, buffer, 1024);
         status = ("\n[client] %s", buffer);
-        print_green(status)
+        printf(status)
         send(client, check, strlen(check), 0);
 
     } while (strcmp(buffer, CLOSE_SERVER) != 0);
