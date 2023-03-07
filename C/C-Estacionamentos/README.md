@@ -1,12 +1,11 @@
 # C - Parking Control
 
 ### Pontifícia Universidade Católica de Minas Gerais _Campus_ Poços de Caldas
+Departamento de Ciência da Computação
 
-### Departamento de Ciência da Computação
+Curso de Ciência da Computação
 
-### Curso de Ciência da Computação
-
-### Disciplinas de Algoritmos e Estruturas de Dados I e Laboratório de Algoritmos e Estruturas de Dados I
+Disciplinas de Algoritmos e Estruturas de Dados I e Laboratório de Algoritmos e Estruturas de Dados I
 
 ## **Objetivo** 🔍
 
