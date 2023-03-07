@@ -14,7 +14,7 @@ O objetivo deste projeto é implementar, utilizando recursos da Linguagem C, um 
 
 ## **Código de Execução (Linux)** 🏁
 
-```
+```sh
 $ gcc -Wall main.c menu-principal.c opcoes-menu.c funcoes-utilitarias.c cores.c arquivos.c -o estacionamentos
 $ ./estacionamentos
 ```
@@ -31,8 +31,8 @@ $ ./estacionamentos
 
 ## **Orientadores** 👨‍🏫
 
--   Claudio Correa
--   Luiz Alberto Ferreira Gomes
+-   [Claudio Correa](https://computacao.pucpcaldas.br/professores/#:~:text=CORPO%20DOCENTE-,Claudio%20Correa,-Possui%20gradua%C3%A7%C3%A3o%20em)
+-   [Luiz Alberto Ferreira Gomes](https://computacao.pucpcaldas.br/professores/#:~:text=Luiz%20Alberto%20Ferreira%20Gomes)
 
 ## **Ferramentas** 🛠
 
