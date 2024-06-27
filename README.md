@@ -1,5 +1,4 @@
 # Some Projects Worked at the College 📚👨‍💻
-# **PROJECTS WORKED AT THE COLLEGE** 📚👨‍💻
 
 Hello! Here you can find some of the projects I worked on in college.
 
