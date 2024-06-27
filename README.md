@@ -102,7 +102,7 @@
 ---
 
 ### <img src=".assets/python.png" height="20px"> Python Notebook
-### Data Analysis and Manipulation
+#### Data Analysis and Manipulation
 - [Introduction to Python Language](./Python/introduction-to-python-language.ipynb)
 - [Python Introduction](./Python/python-introduction.ipynb)
 - [Python Graphical View](./Python/graphical-view.ipynb)
