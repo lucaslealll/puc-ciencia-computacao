@@ -1,8 +1,7 @@
-# PROJECTS WORKED AT THE COLLEGE 📚👨‍💻
-
-*Hello! Here you can find some of the projects I worked on in college.*
-
----
+<h1 style="text-align: center;">
+  <img src=".assets/puc.png" height="45px" style="vertical-align: middle;"> 
+  College Projects
+</h1>
 
 ### <img src=".assets/assembly.png" height="20px"> Assembly
 - [Assembly](./Assembly/)
