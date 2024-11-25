@@ -5,7 +5,7 @@
 # CURSO DE CIÊNCIA DA COMPUTAÇÃO     #
 # DISCIPLINA DE LABORATÓRIO DE REDES #
 #                                    #
-# LUCAS OMAR ANDRADE LEAL            #
+# Lucas            #
 # 10 DE SETEMBRO DE 2022             #
 # ################################## #
 
@@ -30,7 +30,7 @@ rcor='\e[0m'
 
 clear
 
-echo -e "${green}Lab Redes - Mapermento ARP | Lucas Omar Andrade Leal${rcor}\n"
+echo -e "${green}Lab Redes - Mapermento ARP | Lucas${rcor}\n"
 
 # SELEÇÃO DOS DADOS EM CAMPOS ESPECÍFICOS DO COMANDO ifconfig
 # DEFINIÇÃO DO IP, NETMASK E BROADCAST

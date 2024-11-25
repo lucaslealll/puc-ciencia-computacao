@@ -7,7 +7,7 @@
  * 
  * Autoria: 	
  * 				Angelica dos Santos 		- santosangelicassp@gmail.com
- * 				Lucas Omar Andrade Leal 	- lucasomarandradeleal@gmail.com
+ * 				Lucas 	
  * 				Rhian Luis Garcia Moraes 	- rhian.garcia@sga.pucminas.br
  * 
  * Data inicial: 22/05/2020

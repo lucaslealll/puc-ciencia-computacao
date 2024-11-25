@@ -62,9 +62,9 @@
 ### <img src=".assets/java.png" height="20px"> Java
 ### Digital Forensics Study 🛡️
 - [Cyber Security and Computer Forensics Lab Researcher](https://sites.google.com/view/cyberonelab/pessoas?authuser=0#h.9183b6clno28)
-- [Hash Generator](https://github.com/lucasoal/java-GeradorHash)
-- [Interface for ADB](https://github.com/lucasoal/java-ADBInterface)
-- [Android API About Cities](https://github.com/lucasoal/java-AndroidGeodbAPI)
+- [Hash Generator](https://github.com/lucaslealll/java-GeradorHash)
+- [Interface for ADB](https://github.com/lucaslealll/java-ADBInterface)
+- [Android API About Cities](https://github.com/lucaslealll/java-AndroidGeodbAPI)
 - [Study OOP](./Java/Java-EstudoPoo/)
     - [Study OOP - Pen](./Java/poo-study-pen/)
     - [Study OOP - Bank Current Account](./Java/bank-current-account//)

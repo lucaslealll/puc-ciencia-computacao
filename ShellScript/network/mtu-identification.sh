@@ -5,7 +5,7 @@
 # CURSO DE CIÊNCIA DA COMPUTAÇÃO     #
 # DISCIPLINA DE LABORATÓRIO DE REDES #
 #                                    #
-# LUCAS OMAR ANDRADE LEAL            #
+# Lucas            #
 # 22 DE SETEMBRO DE 2022             #
 # ################################## #
 
@@ -23,7 +23,7 @@ RCOR='\e[0m'
 IP_ORIGEM=$(ifconfig | grep 'inet ' | tail -1 | awk '{print $2}')
 IP_DESTINO=157.240.226.35 # facebook
 
-echo -e "${GREEN}Lab Redes - Identificação MTU | Lucas Omar Andrade Leal${RCOR}"
+echo -e "${GREEN}Lab Redes - Identificação MTU | Lucas${RCOR}"
 echo -e "\nDigite o IPV4 que deseja identificar o MTU [Ex: 192.168.2.6]"
 echo -e "[ IPV4 Origem  ] .: ${IP_ORIGEM}"
 echo -e "[ IPV4 Destino ] .: ${IP_DESTINO} [definido para teste - pode habilitar a requisicao no codigo]"
@@ -46,7 +46,7 @@ create_array() {
 
 binary_search() {
     clear
-    echo -e "${GREEN}Lab Redes - Identificação MTU | Lucas Omar Andrade Leal${RCOR}"
+    echo -e "${GREEN}Lab Redes - Identificação MTU | Lucas${RCOR}"
     echo
     echo -e "${GREEN}Min \t Max${RCOR}"
     echo -e "$1 \t $2"

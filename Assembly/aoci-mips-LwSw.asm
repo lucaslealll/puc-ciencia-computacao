@@ -1,5 +1,5 @@
 # AOCI - CLAUDIO FARIA - CC PUC MINAS
-# ALUNO - LUCAS OMAR ANDRADE LEAL - lucasomarandradeleal@gmail.com
+# ALUNO - Lucas 
 # Mips Load Word / Store Word
 # 23/11/2020
 #

@@ -1,4 +1,4 @@
-# ALUNO - LUCAS OMAR ANDRADE LEAL - lucasomarandradeleal@gmail.com
+# ALUNO - Lucas 
 # 10/12/2020
 # PROVA 2
 # QUESTAO 5

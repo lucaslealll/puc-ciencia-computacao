@@ -2,7 +2,7 @@
 //
 // Ciência da Computação - PUC Minas - Poços de Caldas - MG
 //
-// LUCAS OMAR ANDRADE LEAL - lucasomarandradeleal@gmail.com
+// Lucas 
 //
 // 16/set/2020
 //

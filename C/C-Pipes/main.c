@@ -4,7 +4,7 @@
  *	para a disciplina de Sistemas Operacionais S1-2022
  *
  * Autoria:
- * 	Lucas Omar Andrade Leal - lucasomarandradeleal@gmail.com
+ * 	Lucas 
  *
  * Compilado da seguinte forma:
  * 		$ gcc main.c -o main

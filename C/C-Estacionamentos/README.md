@@ -24,7 +24,7 @@ $ ./estacionamentos
 
 <img src="https://avatars.githubusercontent.com/u/65343425?v=4" height="30"> [Angelica dos Santos](https://github.com/angelcomp)
 
-<img src="https://avatars.githubusercontent.com/u/69632369?v=4" height="30"> [Lucas Omar Andrade Leal](https://github.com/lucasoal)
+<img src="https://avatars.githubusercontent.com/u/69632369?v=4" height="30"> [Lucas](https://github.com/lucasoal)
 
 <img src="https://avatars.githubusercontent.com/u/72531802?v=4" height="30"> [Rhian Luis Garcia Moraes](https://github.com/rhian-cs)
 

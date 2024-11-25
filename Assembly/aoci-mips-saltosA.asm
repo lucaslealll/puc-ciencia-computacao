@@ -1,5 +1,5 @@
 # AOCI  - CLAUDIO FARIA - CC PUC MINAS
-# ALUNO - LUCAS OMAR ANDRADE LEAL - lucasomarandradeleal@gmail.com
+# ALUNO - Lucas 
 # Mips Salto Condicional e Incondicional
 # 07/12/2020
 #

@@ -1,5 +1,5 @@
 -- RSA - Exercícios Programação Lua
--- LUCAS OMAR ANDRADE LEAL
+-- Lucas
 
 -- Exercício 1
 
